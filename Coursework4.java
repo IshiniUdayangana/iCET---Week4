@@ -126,15 +126,17 @@ class Coursework4{
 					loan = monthly_installement * (1 - Math.pow((1 + (rate / 12)),-months)) / (rate / 12);
 					System.out.printf("\nYou can get Loan Ammount : %.2f" ,loan);
 				}else if(years > 5){
-					System.out.println("Maxumum number of years should be 5. ");
+					System.out.println("\nMaxumum number of years should be 5. ");
 				}else{
-					System.out.println("Invalid input");
+					System.out.println("\nInvalid input");
 				}
 			}else if (salary < 50000){
-				System.out.println("Salary should greater than 50000");
+				System.out.println("\nSalary should greater than 50000");
 			}else{
-				System.out.println("Invalid input");
+				System.out.println("\nInvalid input");
 			}
+		}else{
+			System.out.println("\nInvalid input");
 		}
 	}
 }
